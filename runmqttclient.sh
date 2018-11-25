@@ -5,7 +5,7 @@ if [ -z "${prc}" ]
 then
 	echo "Process is not running ${prc}:"
 	export PYTHONPATH=$PYTHONPATH:/etc/paho.mqtt.python/build/lib/
-	python mqttclient.py > /dev/null 2>&1 &
+	python /etc/mqttclient.py > /dev/null 2>&1 &
 else
 	echo "Process is running ${prc}"
 fi
