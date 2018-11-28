@@ -8,6 +8,6 @@ Various scripts for home automation
 
 The following /etc/crontab entries are useful:
 ```
-*/10	*	*	*	*	root	/etc/runmqttclient.sh > /root/log_runmqttclient.txt 2>&1
-17	17	*	*	*	root	python /etc/databasewatchdog.py > /root/log_databasewatchdog.txt 2>&1
+*/10	*	*	*	*	iotuser	/etc/runmqttclient.sh > /root/log_runmqttclient.txt 2>&1
+17	17	*	*	*	iotuser	python /etc/databasewatchdog.py > /root/log_databasewatchdog.txt 2>&1
 ```
